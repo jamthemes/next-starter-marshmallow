@@ -1,25 +1,9 @@
 import React from "react"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 import Fade from "react-reveal/Fade"
 
-export default function Contact() {
-  const {
-    file: {
-      childImageSharp: { fluid: contactImg },
-    },
-  } = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "contact.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+import contactImg from "../assets/images/contact.jpg"
 
+export default function Contact() {
   return (
     <section className="contactus" id="contact">
       <div className="container">
@@ -29,7 +13,7 @@ export default function Contact() {
               className="col-sm-5"
               style={{ maxWidth: "300px", marginRight: "2em" }}
             >
-              <Img fluid={contactImg} alt="contact" className="img-fluid" />
+              <img src={contactImg} alt="contact" className="img-fluid" />
             </div>
           </Fade>
           <Fade>

@@ -1,6 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick"
 import Fade from "react-reveal/Fade"
 
@@ -9,22 +7,14 @@ import finishedProject from "../assets/images/finished-project.svg"
 import teamMembers from "../assets/images/team-members.svg"
 import ourBlogPosts from "../assets/images/our-blog-posts.svg"
 
+import slider1 from "../assets/images/carousel/slider1.jpg"
+import slider2 from "../assets/images/carousel/slider2.jpg"
+import slider3 from "../assets/images/carousel/slider3.jpg"
+import slider4 from "../assets/images/carousel/slider4.jpg"
+import slider5 from "../assets/images/carousel/slider5.jpg"
+
 export default function Projects() {
-  const {
-    allFile: { nodes: images },
-  } = useStaticQuery(graphql`
-    query {
-      allFile(filter: { relativePath: { regex: "/carousel/*./" } }) {
-        nodes {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  `)
+  const images = [slider1, slider2, slider3, slider4, slider5]
 
   return (
     <section className="our-projects" id="projects">
@@ -72,9 +62,9 @@ export default function Projects() {
               },
             ]}
           >
-            {images.map(image => (
-              <div className="item" key={image.id}>
-                <Img fluid={image.childImageSharp.fluid} alt="slider" />
+            {images.map(src => (
+              <div className="item" key={src}>
+                <img src={src} alt="slider" />
               </div>
             ))}
           </Slider>

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 
 export default function NotFound() {
   return (
@@ -14,13 +14,10 @@ export default function NotFound() {
                     <h3 className="font-weight-medium">Nothing here :/</h3>
                   </div>
                   <p className="mt-3">Let's go back and try again</p>
-                  <Link to="/" className="btn btn-secondary mt-3">
-                    Home
+                  <Link href="/">
+                    <a className="btn btn-secondary mt-3">Home</a>
                   </Link>
                 </div>
-                {/* <div className="mt-5 mt-lg-0">
-                  <img src={group} alt="marsmello" className="img-fluid" />
-                </div> */}
               </div>
             </div>
           </div>

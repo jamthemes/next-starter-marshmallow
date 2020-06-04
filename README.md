@@ -7,13 +7,15 @@
   Marshmallow - By JamThemes.io
 </h1>
 
-A simple Landing Page starter for your next Gatsby.js project.
+<h1>TODO!!</h1>
+
+A simple Landing Page starter for your awesome Next.js project.
 
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Next CLI to create a new site, specifying the default starter.
 
     ```shell
     gatsby new my-new-site https://github.com/jamthemes/gatsby-starter-marshmallow

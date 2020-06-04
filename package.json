@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-marshmallow",
-  "description": "Modern Landing Page template for Gatsby.js provided by JamThemes.io",
+  "name": "next-starter-marshmallow",
+  "description": "Modern Landing Page template for Next.js provided by JamThemes.io",
   "version": "0.1.0",
   "author": "JamThemes.io",
   "dependencies": {
@@ -21,7 +21,8 @@
     "sass": "^1.26.7"
   },
   "keywords": [
-    "gatsby",
+    "next",
+    "nextjs",
     "landing-page",
     "one-page"
   ],

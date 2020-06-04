@@ -40,7 +40,6 @@ export default function Projects() {
             dots={false}
             slidesToShow={4}
             className="owl-carousel-projects owl-carousel owl-theme"
-            lazyLoad
             responsive={[
               {
                 breakpoint: 0,
@@ -64,7 +63,7 @@ export default function Projects() {
           >
             {images.map(src => (
               <div className="item" key={src}>
-                <img src={src} alt="slider" />
+                <img src={src} alt="slider" loading="lazy" />
               </div>
             ))}
           </Slider>

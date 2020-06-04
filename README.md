@@ -7,7 +7,7 @@
   Marshmallow - By JamThemes.io
 </h1>
 
-<h1>TODO!!</h1>
+<h1>TODO!</h1>
 
 A simple Landing Page starter for your awesome Next.js project.
 
